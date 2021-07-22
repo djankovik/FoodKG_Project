@@ -1,0 +1,234 @@
+###
+GET http://localhost:8080/api/whatToMake/getAllRecipes
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+GET http://localhost:8080/api/whatToMake/getAllIngredients
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+GET http://localhost:8080/api/foodkg/ingredientUsageCount
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+GET http://localhost:8080/api/whatToMake/allUrlNamePairs/Recipe
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+GET http://localhost:8080/api/whatToMake/allUrlNamePairs/Ingredient
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+GET http://localhost:8080/api/whatToMake/allUrlNamePairs/Course
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+GET http://localhost:8080/api/whatToMake/allUrlNamePairs/Meal
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+GET http://localhost:8080/api/whatToMake/allUrlNamePairs/Texture
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+GET http://localhost:8080/api/whatToMake/allUrlNamePairs/Flavor
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+GET http://localhost:8080/api/whatToMake/allRecipeDao/Flavor
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+GET http://localhost:8080/api/whatToMake/getPrettyNames/Ingredient
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+GET http://localhost:8080/api/whatToMake/getRecipesWithRestrictions?forbidMeals=Brunch,Dinner,Snack&forbidCourses=Salad
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+GET http://localhost:8080/api/foodkg/ingredientStatistics
+page: 0
+page-size:500
+
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+GET http://localhost:8080/api/foodkg/websiteRecipeCount
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+
+GET http://localhost:8080/api/foodkg/recipesPerCategory
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+
+GET http://localhost:8080/api/foodkg/predicateCount
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+
+GET http://localhost:8080/api/foodkg/rdfTypesCount
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+
+GET http://localhost:8080/api/foodkg/ingredientFoodCategoryCount
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+
+GET http://localhost:8080/api/foodkg/ingredientMeasurementUnitCount
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+
+GET http://localhost:8080/api/foodkg/numberOfRecipesWhichContain?foodItem=tomato
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+
+GET http://localhost:8080/api/foodkg/recipesWhichContain?foodItem=tomato
+
+###
+
+GET http://localhost:8080/api/foodkg/numberOfRecipesWhichContain?foodItem=tomato
+
+###
+
+GET http://localhost:8080/api/foodkg/numberOfIngredientsWhichContain?foodItem=tomato
+
+###
+
+GET http://localhost:8080/api/foodkg/searchRecipes?keyword=tomato
+
+###
+
+GET http://localhost:8080/api/foodkg/searchIngredients?keyword=tomato
+
+###
+
+GET http://localhost:8080/api/foodkg/allRecipesPaged
+page: 0
+page-size:150
+
+###
+
+GET http://localhost:8080/api/foodkg/allIngredientsPaged
+page: 0
+page-size:150
+###
+
+GET http://localhost:8080/api/foodkg/allRecipes
+
+###
+
+GET http://localhost:8080/api/foodkg/allIngredients
+
+###
+
+
+GET http://localhost:8080/api/foodkg/recipesPerCountryCuisine
+
+###
